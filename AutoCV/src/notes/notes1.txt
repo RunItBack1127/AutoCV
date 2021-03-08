@@ -1,0 +1,8 @@
+Box to open PDF on generate is checked by default
+Reset to default option in Applicant Info window
+	StackPane with option for save and option for reset
+	Save icon and reuse the reset icon
+Store the data internally in a parseable text file
+	Does not have to be .txt --> recommended not
+Able to edit the contents of the file as well
+	Change option to "Reconfig Data" or smth

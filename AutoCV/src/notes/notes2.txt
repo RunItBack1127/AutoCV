@@ -1,0 +1,4 @@
+Implement PDF generation logic
+Add a way to delete the config file?
+	Advanced Options
+	Other advanced options?

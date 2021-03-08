@@ -1,0 +1,91 @@
+.main-container {
+	-fx-background-color: linear-gradient( to bottom, black, rgb( 100, 0, 0 ) );
+}
+
+.main-header {
+	-fx-pref-width: 13.333333em;
+	-fx-pref-height: 2.5em;
+}
+
+.save-company:hover {
+	-fx-background-color: yellow;
+	-fx-text-fill: black;
+}
+
+/* Corresponds to the menu and refresh icons */
+.main-header-option {
+	-fx-pref-width: 12.5em;
+	-fx-pref-height: 6.25em;
+}
+
+.refresh-button {
+	-fx-background-image: url('/icons/refresh_icon.png');
+}
+
+.main-menu {
+	-fx-background-image: url('/icons/menu_icon.png');
+}
+
+.main-menu .menu {
+	-fx-pref-width: inherit;
+	-fx-pref-height: inherit;
+}
+
+.main-menu .menu:hover {
+	-fx-background-color: null;
+}
+
+.main-menu .menu:showing {
+	-fx-background-color: null;
+}
+
+.main-menu .context-menu * {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-font-size: 14;
+	-fx-font-family: 'NimbusSanL';
+}
+
+.main-menu:hover {
+	-fx-background-color: transparent;
+}
+
+.main-grid {
+	-fx-alignment: center;
+	-fx-vgap: 1.666667em;
+	-fx-padding: 1.666667em 0 2.916667em 0;
+}
+
+.generate-button {
+	-fx-font-size: 12.75;
+	-fx-pref-width: 47.058824em;
+	-fx-pref-height: 3.137255em;
+	-fx-background-color: red;
+	-fx-font-family: 'NimbusSanL';
+	-fx-text-fill: white;
+	-fx-background-radius: 3.921569em;
+	-fx-border-radius: 3.921569em;
+	-fx-border-style: solid outside;
+	-fx-border-color: black;
+}
+
+.generate-button:hover {
+	-fx-background-color: yellow;
+	-fx-text-fill: black;
+}
+
+.pdf-checkbox {
+	-fx-text-fill: white;
+}
+
+.pdf-checkbox .box {
+	-fx-background-color: white;
+}
+
+#generate-checkbox-spacer {
+	-fx-padding: 0 4.166667em 0 4.166667em;
+}
+
+#checkbox-spacer {
+	-fx-padding: 0.833333em 0 2.5em 0;
+}

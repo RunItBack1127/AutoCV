@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" styleClass="stage-container, app-info-container">
+	<StackPane xmlns:fx="http://javafx.com/fxml/1">
+		
+		<Button styleClass="stage-header, app-info-header" text="Applicant Info"/>
+	
+		<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="save-container">
+			<Button styleClass="save-button, icon-option, app-info-option" fx:id="saveBtn" onMouseClicked="#clickSaveButton" disable="true"/>
+		</VBox>
+	</StackPane>
+	
+	<GridPane styleClass="app-info-grid">
+		<columnConstraints>
+			<ColumnConstraints minWidth="125" prefWidth="125"/>
+			<ColumnConstraints minWidth="200" prefWidth="200"/>
+		</columnConstraints>
+		
+		<Text styleClass="field" text="NAME" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+		<Text styleClass="field" text="EMAIL" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+		<Text styleClass="field" text="GITHUB LINK" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+		<Text styleClass="field" text="LINKEDIN LINK" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+		<Text styleClass="field" text="PHONE" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+		<Text styleClass="field" text="SCHOOL YEAR" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+		<Text styleClass="field" text="STREET ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+		<Text styleClass="field" text="CITY/STATE/ZIP" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+		<Text styleClass="field" text="ROOM NUMBER" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+		<Text styleClass="field" text="STREET ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+		<Text styleClass="field" text="CITY/STATE/ZIP" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+		<Text styleClass="field" text="P.O. BOX ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="13"/>
+		
+		<HBox xmlns:fx="http://javafx.com/fxml/1" GridPane.columnIndex="1" GridPane.rowIndex="0">
+			<TextField styleClass="name-field" fx:id="nameField"/>
+			
+			<GridPane styleClass="name-mi-grid" GridPane.columnIndex="1" GridPane.rowIndex="0">
+				<columnConstraints>
+					<ColumnConstraints minWidth="30" prefWidth="30"/>
+					<ColumnConstraints minWidth="30" prefWidth="30"/>
+				</columnConstraints>
+				
+				<Text styleClass="field" text="M.I." GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+				<TextField fx:id="middleInitialField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+			</GridPane>
+		</HBox>
+		
+		<TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+		<TextField fx:id="gitHubField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+		<TextField fx:id="linkedInField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+		<TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+		
+		<GridPane styleClass="year-rise-grid" GridPane.columnIndex="1" GridPane.rowIndex="5">
+			<columnConstraints>
+				<ColumnConstraints minWidth="170" prefWidth="170"/>
+				<ColumnConstraints minWidth="20" prefWidth="20"/>
+			</columnConstraints>
+		
+			<ChoiceBox styleClass="year-field" fx:id="schoolYearBox" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+			<CheckBox fx:id="isRisingBox" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+		</GridPane>
+		
+		<TextField fx:id="presentSAField" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+		<TextField fx:id="presentCSZField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+		<TextField fx:id="presentRNField" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+		<TextField fx:id="permanentSAField" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+		<TextField fx:id="permanentCSZField" GridPane.columnIndex="1" GridPane.rowIndex="12"/>
+		<TextField fx:id="permanentPOBField" GridPane.columnIndex="1" GridPane.rowIndex="13"/>
+		
+		<Button styleClass="app-info-section-header" text="PRESENT ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+		<Button styleClass="app-info-section-header" text="PERMANENT ADDRESS" GridPane.columnIndex="0" GridPane.rowIndex="10" GridPane.columnSpan="2"/>
+	</GridPane>
+</fx:root>
+

@@ -1,0 +1,85 @@
+.dp-text {
+	color: #000000;
+	font-weight: 400;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 11pt;
+	font-family: "Nunito";
+	font-style: normal;
+}
+
+.credential {
+	float: left;
+	width: 33.3333333%;
+}
+
+.cred-date-pad {
+	padding-top: 5pt;
+}
+
+.line-spacer {
+	padding-top: 10pt;
+}
+
+.date-company-pad {
+	padding-top: 10pt;
+}
+
+.dcr-pad {
+	padding-top: 10pt;
+}
+
+.conclusion-pad {
+	padding-top: 20pt;
+}
+
+.sig-spacer {
+	padding-top: 5pt;
+}
+
+.p-style {
+	line-height: 1.25;
+	text-align: justify;
+}
+
+.bold-dp-text {
+	font-weight: 700;
+	font-family: "Nunito";
+}
+
+.signature {
+	font-size: 30pt;
+	font-family: "Tangerine";
+	font-weight: 400;
+}
+
+.app-name {
+	font-size: 18pt;
+	font-family: "Calibri";
+	font-weight: 700;
+}
+
+.email {
+	padding-top: 10px;
+	float:right;
+}
+
+.page-style {
+	background-color: #ffffff;
+	max-width: 540pt;
+	padding: 36pt 36pt 36pt 36pt;
+}
+
+p {
+	margin: 0;
+	color: #000000;
+	font-size: 11pt;
+	font-family: "Arial";
+}
+
+@font-face {
+	font-family: 'Nunito';
+	font-weight: 400;
+	font-style: normal;
+	src: url('C:/Users/Wes/git/AutoCV/AutoCV/bin/fonts/nunito.ttf');
+}

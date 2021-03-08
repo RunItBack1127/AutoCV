@@ -1,0 +1,57 @@
+.app-info-container {
+	-fx-background-color: linear-gradient( to bottom, black, rgb( 50, 50, 50 ) );
+}
+
+.app-info-option {
+	-fx-pref-width: 6.25em;
+	-fx-pref-height: 4.166667em;
+}
+
+/* Used for the config panel to center the save button */
+.save-container {
+	-fx-alignment: center-left;
+}
+
+.app-info-header {
+	-fx-pref-width: 11.666667em;
+	-fx-pref-height: 2.5em;
+}
+
+.app-info-section-header {
+	-fx-pref-width: 27.083333em;
+	-fx-background-radius: 4.166667em;
+	-fx-border-radius: 4.166667em;
+	-fx-font-family: 'NimbusSanL';
+	-fx-background-color: black;
+	-fx-border-style: solid outside;
+	-fx-text-fill: white;
+}
+
+.app-info-grid {
+	-fx-alignment: center;
+	-fx-vgap: 1.25em;
+	-fx-padding: 0 0 1.25em 0;
+}
+
+.year-rise-grid {
+	-fx-alignment: baseline-right;
+	-fx-hgap: 0.833333em;
+}
+
+.name-mi-grid {
+	-fx-alignment: baseline-right;
+	-fx-padding: 0 0 0 0.833333em;
+}
+
+.name-field {
+	-fx-pref-width: 10.833333em;
+}
+
+.year-field {
+	-fx-pref-width: 14.166667em;
+}
+
+.save-refresh-pad {
+	-fx-pref-width: 16.666667em;
+	visibility: hidden;
+}

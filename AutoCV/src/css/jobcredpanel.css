@@ -1,0 +1,25 @@
+.job-cred-container {
+	-fx-background-color: linear-gradient( to bottom, black, rgb( 50, 50, 50 ) );
+}
+
+.job-cred-header {
+	-fx-pref-width: 16.666667em;
+	-fx-pref-height: 2.5em;
+}
+
+.job-cred-option {
+	-fx-pref-width: 12.5em;
+	-fx-pref-height: 6.25em;
+	-fx-background-size: 2.5em;
+}
+
+.job-cred-grid {
+	-fx-alignment: center;
+	-fx-hgap: 6.25em;
+	-fx-vgap: 1.25em;
+	-fx-padding: 0 0 1.666667em 0;
+}
+
+.job-cred-choicebox {
+	-fx-pref-width: 16.666667em;
+}

@@ -1,0 +1,3 @@
+Add a disclaimer about distributing the sensitive information stored for the application
+DO NOT RESTRIBUTE.....
+Maybe some clause removing any liability from the app creator for any stolen information

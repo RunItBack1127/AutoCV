@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" styleClass="main-container, stage-container">
+	<HBox xmlns:fx="http://javafx.com/fxml/1">
+		<MenuBar fx:id="mainMenu" styleClass="icon-option, main-menu, main-header-option">
+			<Menu>
+				<MenuItem fx:id="editAppInfo" text="Edit Application Info" onAction="#editMainAppInfo"/>
+				<MenuItem fx:id="editJobCred" text="Edit Job Credentials" onAction="#editJobCredentials"/>
+				<MenuItem fx:id="editConfig" text="Config Applicant Info" onAction="#editConfigAppInfo"/>
+				<SeparatorMenuItem/>
+				<MenuItem fx:id="saveCompany" text="Save Company" onAction="#saveCompany"/>
+				<Menu fx:id="loadCompany" text="Load Company" disable="true"/>
+			</Menu>
+		</MenuBar>
+		
+		<Button styleClass="stage-header, main-header" text="AutoCV"/>
+		
+		<Button fx:id="refreshBtn" styleClass="icon-option, refresh-button, main-header-option" onMouseClicked="#clickRefresh"/>
+	</HBox>
+	
+	<GridPane styleClass="main-grid">
+		<columnConstraints>
+			<ColumnConstraints minWidth="200" prefWidth="200"/>
+			<ColumnConstraints minWidth="400" prefWidth="400"/>
+		</columnConstraints>
+		
+		<Text text="COMPANY NAME" styleClass="field" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+		<Text text="STREET ADDRESS" styleClass="field" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+		<Text text="CITY/STATE/ZIP" styleClass="field" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+		<Text text="JOB TITLE" styleClass="field" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+		
+		<TextField fx:id="companyNameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+		<TextField fx:id="companySAField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+		<TextField fx:id="companyCSZField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+		<TextField fx:id="jobTitleField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+	</GridPane>
+	
+	<VBox id="generate-checkbox-spacer" xmlns:fx="http://javafx.com/fxml/1">
+		<Button text="GENERATE" fx:id="generateBtn" styleClass="generate-button" onMouseClicked="#generateCoverLetter"/>
+		<HBox id="checkbox-spacer" xmlns:fx="http://javafx.com/fxml/1">
+			<CheckBox styleClass="pdf-checkbox" text="Open PDF on generation" fx:id="openPDFBox"/>
+		</HBox>
+	</VBox>
+</fx:root>
+
